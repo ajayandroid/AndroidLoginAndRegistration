@@ -3,6 +3,7 @@ package inducesmile.com.androidloginandregistration;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.TextView;
@@ -24,6 +25,8 @@ public class LoginActivity extends ActionBarActivity {
         TextView successMessage = (TextView)findViewById(R.id.message);
         loginUsername.setText(loggedUser);
         successMessage.setText(message);
+       Test i=new Test();
+        i.Test();
     }
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -49,5 +52,6 @@ public class LoginActivity extends ActionBarActivity {
         String input = textInput.toLowerCase();
         String output = input.substring(0, 1).toUpperCase() + input.substring(1);
         return output;
+
     }
 }
